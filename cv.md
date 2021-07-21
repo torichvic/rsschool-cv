@@ -1,7 +1,7 @@
 # Victoria Chen
 ***
 
- My contact details:
+ ## My contact details:
 * **Email**: torichvic0@gmail.com
 * **Telegram**: @torichvic
 * **Discord**: quessy#0922
@@ -9,10 +9,12 @@
 ***
 # My goal and priorities
 
-I want to get necessary skills for work as *frontend-developer*. I like solving different problems. I master any information enough quickly. For instance, I have been starting to get English classes since February this year. To be more precise, I have been studying English for 6 months. And I have improved fluency in the English language from Beginner to Pre-Intermediate. I am getting better results, at least Upper-Intermediate.
+* I want to get necessary skills for work as *frontend-developer*. I like solving different problems.\
+* I master any information enough quickly. For instance, I have been starting to get English classes since February this year. To be more precise, I have been studying English for 6 months. And I have improved fluency in the English language from Beginner to Pre-Intermediate. I am getting better results, at least Upper-Intermediate.
 ***
 # My skills
-I have known basis of *JavaScript, Git, HTML&CSS* and *Markdown*. I use tools for the developing  such as *Visual Studio Code, Bracket* and *Git Bash*.
+* I have known basis of ***JavaScript, Git, HTML&CSS*** and ***Markdown***. \
+* I use tools for the developing  such as ***Visual Studio Code, Bracket*** and ***Git Bash***.
 
 **This is my first HTML-file**:
 
@@ -32,8 +34,11 @@ I have known basis of *JavaScript, Git, HTML&CSS* and *Markdown*. I use tools fo
 ```
 I have no experience in Frontend-Development scope, because I have just begun to explore.
 ***
-# My education
+# About my education
 
-I successfully graduated from [University of Economics](https://int.rsue.ru/en/) in 2018 years. I have studied **Trade Industry**. I have participated in the conference _'Modern economic problems in Russia'_ and gave a presentation there. My article has published in this [book](https://search.rsl.ru/ru/record/01000735017)
+* I successfully graduated from [University of Economics](https://int.rsue.ru/en/) in 2018 years.
+* I have studied **Trade Industry**.
+* I have participated in the conference _'Modern economic problems in Russia'_ and gave a presentation there.
+* My article has published in this [book](https://search.rsl.ru/ru/record/01000735017)
 # English
 I am having **pre-intermediate** (**A2+**) English now.
