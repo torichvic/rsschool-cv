@@ -24,6 +24,7 @@
     </head>
 </html>
 ```
+
 I have no experience in Frontend-Development scope, because I have just begun to explore.
 
 ## About my education
