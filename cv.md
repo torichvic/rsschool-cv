@@ -22,12 +22,6 @@
         <title>My project</title>
         <script src="src/script.js"></script>
     </head>
-    <body>
-        <p>Hello!</p>
-        <script>
-            hello();
-        </script>
-    </body>
 </html>
 ```
 I have no experience in Frontend-Development scope, because I have just begun to explore.
