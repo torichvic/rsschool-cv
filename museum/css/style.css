@@ -528,6 +528,27 @@ html {
     justify-content: space-between;
 }
 
+.header__logo {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 21px;
+
+}
+
+.header__logo-pic {
+    background-image: url("/museum/assets/img/logo__louvre.svg");
+    width: 50px;
+    height: 34px;
+    margin-right: 20px;
+}
+
+.header__logo-pic:hover {
+    filter: invert(109%) sepia(20%) saturate(7468%) hue-rotate(192deg) brightness(50%) contrast(3%);
+}
+.header__logo-text {
+    text-transform: uppercase;
+}
+
 .header__list {
     display: flex;
     flex-wrap: wrap;
