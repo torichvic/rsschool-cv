@@ -435,6 +435,71 @@ textarea {
          url('../fonts/roboto-v27-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/roboto-v27-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
   }
+  /* @font-face kit by Fonts2u (https://fonts2u.com) */
+  @font-face {
+    font-family:"Roboto Light";
+    src: url("Roboto-Light.eot?") format("eot"),
+         url("Roboto-Light.woff") format("woff"),
+         url("Roboto-Light.ttf") format("truetype"),
+         url("Roboto-Light.svg#Roboto-Light") format("svg");
+    src: "/museum/assets/fonts/roboto-v27-latin/Roboto-Light.woff";
+    font-weight:normal;font-style:normal;
+  }
+
+  /* @font-face kit by Fonts2u (https://fonts2u.com) */
+  @font-face {
+    font-family: "Roboto Thin";
+    src: url("Roboto-Thin.eot?") format("eot"),
+         url("Roboto-Thin.woff") format("woff"),
+         url("Roboto-Thin.ttf") format("truetype"),
+         url("Roboto-Thin.svg#Roboto-Thin") format("svg");
+    src: url(/museum/assets/fonts/roboto-v27-latin/Roboto-Thin.woff);
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* Стили для повторяющихся секций */
+
+.section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.light-section {
+    background-color: #E5E5E5;
+    color: #000000;
+}
+
+.dark-section {
+    background-color: #030303;
+    color: #FFFFFF;
+}
+
+.video-section {
+    padding-top: 95px;
+    padding-bottom: 75px;
+    background-color: #E5E5E5;
+    color: #000000;
+}
+
+/* Стили для повторяющихся секций закончены */
+
+/* Объявляю переменные */
+
+:root {
+    --bg-dark: #151719;
+    --dark-red: #710707;
+    --font-gold: #9d8665;
+    --font1: 80px;
+    --font2: 32px;
+    --font3: 28px;
+    --font4: 22px;
+    --font5: 18px;
+  }
+
+  /* Переменные объявлены */
+
+/* Начинаю верстать первую welcome-page */
 
 html {
     box-sizing: border-box;
@@ -449,13 +514,38 @@ html {
     font-style: normal;
     font-size: 22px;
     font-weight: 200;
-    color: #FFFFFF;
 }
 
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: black;
 }
 
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item {
+    margin-right: 76px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+    font-family: Roboto-Thin;
+    font-style: normal;
+    line-height: 50px;
+    color: inherit;
+    text-decoration: inherit;
+}
 
