@@ -1,0 +1,172 @@
+/* roboto-100 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('/assets/fonts/Roboto/roboto-v27-latin-100.woff2'),
+       url('../fonts/Roboto/roboto-v27-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Roboto/roboto-v27-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('/assets/fonts/Roboto/roboto-v27-latin-300.woff2'),
+       url('../fonts/Roboto/roboto-v27-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Roboto/roboto-v27-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/Roboto/roboto-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Roboto/roboto-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('/assets/fonts/Roboto/roboto-v27-latin-500.woff2'),
+       url('../fonts/Roboto/roboto-v27-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Roboto/roboto-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('/assets/fonts/Roboto/roboto-v27-latin-700.woff2'),
+       url('../fonts/Roboto/roboto-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Roboto/roboto-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: Forum;
+  src: url("assets/fonts/Forum/Forum-Regular.ttf");
+  font-weight: 400;
+}
+/* ЗАДАЮ ОБЩИЕ НАСТРОЙКИ */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 22px;
+  color: #ffffff;
+}
+.container {
+  max-width: 1440px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.dark-section {
+  background-color: #030303;
+}
+
+.video-section {
+  padding-top: 90px;
+  padding-bottom: 75px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.section__title-light {
+  font-family: Forum;
+  font-size: 80px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+
+.section__title-gold {
+  font-family: Forum;
+  font-size: 80px;
+  font-weight: 400;
+  color: #9d8665;
+  letter-spacing: 5px;
+  }
+/* РАБОТАЮ НАД ШАПКОЙ HEADER */
+
+ .header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: Forum;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background-image: url("./assets/img/Vector.svg");
+  width: 50px;
+  height: 36px;
+  background-repeat: no-repeat;
+  padding-left: 70px;
+}
+
+.header__logo:hover {
+  filter: invert(57%) sepia(10%) saturate(996%) hue-rotate(356deg) brightness(93%) contrast(96%);
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__item {
+  margin-right: 76px;
+  list-style: none;
+}
+
+.header__item:last-child {
+  margin-right: 0;
+}
+
+.header__link {
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header__link:hover {
+ color: #9d8665;
+}
+
+.header__link:active {
+  color: #9d8665;
+  opacity: 0.7;
+}
+
+/* Header styles end */
+
+/* Main styles sstart */
+
+.welcome {
+  height: 100vh;
+}
+
