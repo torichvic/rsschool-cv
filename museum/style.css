@@ -3,7 +3,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
-  src: local('/assets/fonts/Roboto/roboto-v27-latin-100.woff2'),
+  src: local('./assets/fonts/Roboto/roboto-v27-latin-100.woff2'),
        url('../fonts/Roboto/roboto-v27-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/Roboto/roboto-v27-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -12,7 +12,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: local('/assets/fonts/Roboto/roboto-v27-latin-300.woff2'),
+  src: local('./assets/fonts/Roboto/roboto-v27-latin-300.woff2'),
        url('../fonts/Roboto/roboto-v27-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/Roboto/roboto-v27-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -30,7 +30,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: local('/assets/fonts/Roboto/roboto-v27-latin-500.woff2'),
+  src: local('./assets/fonts/Roboto/roboto-v27-latin-500.woff2'),
        url('../fonts/Roboto/roboto-v27-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/Roboto/roboto-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
@@ -39,13 +39,13 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: local('/assets/fonts/Roboto/roboto-v27-latin-700.woff2'),
+  src: local('./assets/fonts/Roboto/roboto-v27-latin-700.woff2'),
        url('../fonts/Roboto/roboto-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/Roboto/roboto-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face {
   font-family: Forum;
-  src: url("assets/fonts/Forum/Forum-Regular.ttf");
+  src: url("./assets/fonts/Forum/Forum-Regular.ttf");
   font-weight: 400;
 }
 /* ЗАДАЮ ОБЩИЕ НАСТРОЙКИ */
@@ -55,6 +55,9 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  outline: none;
 }
 
 body {
@@ -96,6 +99,8 @@ body {
   font-weight: 400;
   color: #ffffff;
   letter-spacing: 5px;
+  line-height: 90px;
+  text-transform: uppercase;
 }
 
 .section__title-gold {
@@ -104,6 +109,8 @@ body {
   font-weight: 400;
   color: #9d8665;
   letter-spacing: 5px;
+  line-height: 90px;
+  text-transform: uppercase;
   }
 /* РАБОТАЮ НАД ШАПКОЙ HEADER */
 
@@ -168,5 +175,50 @@ body {
 
 .welcome {
   height: 100vh;
+  background-image: url(./assets/img/background__welcome.jpg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - -15px) calc(100% - 18px);
+  padding-top: 315px;
+  padding-left: 15px;
 }
+
+.welcome__title {
+  max-width: 598px;
+  margin-bottom: 26px;
+}
+.welcome__subtitle {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  margin-bottom: 76px;
+}
+
+.welcome__button {
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #ffffff;
+
+  display: inline-block;
+  width: 360px;
+  height: 75px;
+  border-radius: 10px;
+  background-color: #710707;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome__button:hover {
+  background-color: #9D8665;
+}
+
+/* Welcome page end */
+
+/* Visiting start */
 
