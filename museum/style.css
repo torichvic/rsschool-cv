@@ -256,7 +256,6 @@ body {
   flex-wrap: wrap;
   gap: 78px 60px;
   text-decoration: none;
-  flex-direction: reverse;
 }
 
 .virtual-card__img {
@@ -318,3 +317,46 @@ body {
 
 /* ==== Video start ==== */
 
+.explore__container {
+  display: flex;
+  gap: 0 60px;
+}
+
+.explore__title {
+  position: relative;
+  margin-bottom: 103px;
+}
+
+.explore__title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 660px;
+  height: 3px;
+  background-color: var(--dark-red);
+}
+
+.explore__subtitle {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 38px;
+  margin-bottom: 25px;
+  width: 655px;
+}
+
+.explore__subtitle-phrase {
+  color: #CAAA7D;
+}
+
+.explore-pic {
+  width: 100%;
+  height: calc(100% - 20px);
+  flex-direction: column;
+}
+
+/* ==== Explore finish ==== */
+
+/* ==== Video start ==== */
