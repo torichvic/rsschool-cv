@@ -88,6 +88,7 @@ body {
 
 /* ==== ЗДЕСЬ УБРАЛА ФИКСАЦИЮ ХЕДЕРА, ДОБАВЛЮ НА STAGE1 ==== */
 .header {
+  display: fixed;
   width: 100%;
   background-color: #030303;
 }
@@ -416,6 +417,8 @@ margin-bottom: 40px;
   gap: 0 48px;
 }
 
+
+
 /* ==== TITLE VIDEO-SECTION==== */
 
 .video-text__container {
@@ -442,56 +445,32 @@ gap: 0 115px;
 /* ==== TICKETS SECTION START ==== */
 
 /* ===== КОНТЕЙНЕР ДЛЯ КАРТИНКИ, ТИКЕТС ТАЙПА И ТИКЕТС БАЙ */
-.tickets__container {
-  display: flex;
-  position: relative;
+
+.tickets-menu__container {
+display: flex;
+flex-wrap: wrap;
+position: relative;
 }
 
-/* ==== САМА КАРТИНКА ==== */
-.tickets-pic {
+.tickets-menu__pic {
+  background-image: url(/assets/img/tickets/tickets-pic.png);
   width: 720px;
   height: 550px;
-  margin-bottom: 75px;
+  background-repeat: no-repeat;
 }
 
-/* ==== ПОКА КАЖЕТСЯ, ЧТО ЭТО МОЖНО УДАЛИТЬ, НИ НА ЧТО НЕ ВЛИЯЕТ */
-/* .tickets-menu__container {
-  margin-left: 100px;
-  position: relative;
-} */
+
+/* ==== НАЧИНАЮТСЯ СТИЛИ ДЛЯ РАДИОКНОПОК ==== */
 
 .ticket-type {
-  /* position: absolute; */
-  text-align: left;
-
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 50px 0;
+  padding-left: 60px;
 }
 
-.tickets__style-title {
-  font-family: Roboto;
-  font-size: 28px;
-  line-height: 33px;
-  margin-bottom: 50px;
-}
-
-.tickets__style-subtitle {
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 26px;
-}
-
-
-.type__container {
-  display: block;
-  position: relative;
-  margin-bottom: 54px;
-  cursor: pointer;
-  color: #ffffff;
-  user-select: none;
-  margin-top: 50px;
-}
-
-.type__container input {
+.tickets-menu__container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -499,12 +478,20 @@ gap: 0 115px;
 
 .checkmark {
   position: absolute;
-  top: 4px;
-  left: -40px;
+  top: 0;
+  left: 0;
   height: 17px;
   width: 17px;
   border: 2px solid #ffffff;
   border-radius: 50%;
+}
+
+.tickets-menu__container:hover input ~ .checkmark {
+  background-color: #030303;
+}
+
+.tickets-menu__container input:checked ~ .checkmark {
+  background-color: #030303;
 }
 
 .checkmark:after {
@@ -513,37 +500,35 @@ gap: 0 115px;
   display: none;
 }
 
-
-.type__container input:checked ~ .checkmark:after {
+.tickets-menu__container input:checked ~ .checkmark:after {
   display: block;
 }
 
-.type__container .checkmark:after {
-  top: 3px;
-  left: 3px;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #ffffff;
-}
-
-
-
-
-
-
-
-
-
-.amount-title {
-  position: absolute;
-  text-align: right;
-}
-.amount-button {
-  width: 175px;
-  height: 50px;
-  border-radius: 5px;
+.tickets-menu__container .checkmark:after {
+ 	top: 3px;
+	left: 3px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
   background-color: #ffffff;
-
-
 }
+
+.tickets__style-title {
+  font-family: Roboto;
+  font-size: 28px;
+  line-height: 33px;
+/*   margin-bottom: 50px; */
+}
+
+.tickets__style-subtitle {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  padding-left: 41px;
+}
+
+
+
+
+
