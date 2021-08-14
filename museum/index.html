@@ -149,6 +149,7 @@
         <section class="video video-section">
             <div class="container">
                 <div class="video-player">
+                    <button class="big-pause-button"><a href="#!"></a></button>
                     <video src="assets/img/video/" poster="./assets/img/video/video1.png" controls class="video-poster"></video>
                 </div>
 
@@ -208,14 +209,57 @@
                         </label>
                         </div>
 
+                        <div class="amount">
+                            <h3 class="tickets__style-title amount__title">
+                                Amount
+                            </h3>
+                            <p class="tickets__style-subtitle amount__subtitle">Basic 18+</p>
+                            <div class="counter">
+                                <button type="button" onclick="this.nextElementSibling.stepDown()" class="counter__minus">&mdash;</button>
+                                <input type="number" min="0" max="20" value="1" readonly class="number__1">
+                                <button type="button" onclick="this.previousElementSibling.stepUp()" class="counter__plus">+</button>
+                            </div>
 
+                            <p class="tickets__style-subtitle amount__subtitle">Senior 65+</p>
+                            <div class="counter">
+                                <button type="button" onclick="this.nextElementSibling.stepDown()" class="counter__minus">&mdash;</button>
+                                <input type="number" min="0" max="20" value="1" readonly class="number__1">
+                                <button type="button" onclick="this.previousElementSibling.stepUp()" class="counter__plus">+</button>
+                            </div>
+                            <h3 class="tickets__style-title amount__total">
+                                Total €220
+                            </h3>
+                            <button type="button" class="button__buy-now">Buy Now</button>
+                        </div>
                         </div>
                     </div>
             </div>
         </section>
 
-    </main>
+<!-- ==== AMOUNT MENU END ==== -->
 
+<!-- ==== SECTION CONTACTS START ==== -->
+
+        <section class="contacts section">
+            <div class="container">
+                <h2 class="tickets__title section__title-gold underline__title">Contacts</h2>
+                <div class="contacts-info__container">
+                    <span class="contacts-description">
+                        <h4 class="contacts__subtitle">Palais Royal<br>
+                            Musee du Louvre</h4>
+                            <address class="contacts__address">
+                                <ul>
+                                    <li class="contacts__item">address: 75001 Paris, France</li>
+                                    <li class="contacts__item"><a href="tel:+330140205050" class="contacts__item">phone: +33(0) 1 40 20 50 50</a></li>
+                                    <li class="contacts__item"><a href="mailto:info@louvre.fr" class="contacts__item">mail: info@louvre.fr</a></li>
+                                </ul>
+                        </address>
+                    </span>
+                    <div class="contacts__map"><img src="./assets/img/contacts/contacts-map.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
 
     </footer>

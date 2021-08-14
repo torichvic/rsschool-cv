@@ -113,6 +113,11 @@ body {
   text-transform: uppercase;
   }
 
+  button {
+    background-color: transparent;
+    cursor: pointer;
+  }
+
 /* ==== ЗАДАЮ ПЕРЕМЕННЫЕ ==== */
 
 :root {
@@ -361,19 +366,34 @@ body {
 
 /* ==== VIDEO-SECTION START ==== */
 
+.video-player {
+  position: relative;
+}
+
+.big-pause-button {
+  background-image: url(./assets/img/video/big-play-pause.svg);
+  width: 220px;
+  height: 220px;
+  bottom: 33%;
+  right: 43%;
+  background-repeat: no-repeat;
+  border: none;
+  position: absolute;
+}
+
 .video-poster {
   margin-bottom: -6px;
 }
 
 .video-controller__container {
-width: 100%;
-height: 85px;
-background-color: #000000;
-display: flex;
-justify-content: space-around;
-align-items: center;
-padding: 0 41px 0 41px;
-margin-bottom: 40px;
+  width: 100%;
+  height: 85px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 41px 0 41px;
+  margin-bottom: 40px;
 }
 
 .video-buttons {
@@ -447,9 +467,9 @@ gap: 0 115px;
 /* ===== КОНТЕЙНЕР ДЛЯ КАРТИНКИ, ТИКЕТС ТАЙПА И ТИКЕТС БАЙ */
 
 .tickets-menu__container {
-display: flex;
-flex-wrap: wrap;
-position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .tickets-menu__pic {
@@ -470,7 +490,7 @@ position: relative;
   padding-left: 60px;
 }
 
-.tickets-menu__container input {
+.ticket-type input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -528,7 +548,142 @@ position: relative;
   padding-left: 41px;
 }
 
+/* ==== AMOUNT START */
+.amount {
+/*   display: flex;
+  flex-direction: column; */
+  text-align: right;
+  position: relative;
+  left: 262px;
+  width: 150px;
+}
 
+.amount__title {
+  margin-bottom: 11px;
+}
 
+.amount__subtitle {
+  margin-bottom: 14px;
+  padding-left: 0;
+  text-align: left;
+}
 
+.counter {
+  border: 3px solid #ffffff;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto;
+  position: relative;
+  margin-bottom: 35px;
+}
 
+.amount__total {
+  margin: 50px 0 50px 0;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 1.65px;
+  vertical-align: top;
+}
+
+.counter__minus {
+  width: 40px;
+  height: 10px;
+  margin-top: 8px;
+  margin-left: 0;
+  font-size: 25px;
+  font-weight: 500;
+  background-color: #030303;
+  border: none;
+  color: #ffffff;
+  font-family: Roboto;
+
+}
+
+.number__1 {
+  position: absolute;
+  top: 10px;
+  right: 33px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 300;
+  background-color: #030303;
+  text-align: center;
+  border: 0;
+}
+
+.counter__plus {
+  margin-right: 12px;
+  margin-top: 2px;
+  font-size: 35px;
+  font-weight: normal;
+  background-color: #030303;
+  border: none;
+  color: #ffffff;
+}
+
+.button__buy-now {
+  width: 175px;
+  height: 50px;
+  background: #ffffff;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  vertical-align: center;
+  margin-left: -100px;
+}
+
+/* ==== AMOUNT MENU END ==== */
+
+/* ==== SECTION CONTACTS START */
+
+.container h2 {
+  margin-bottom: 113px;
+}
+
+.contacts-info__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 198px 0;
+}
+
+.contacts-description {
+  display: block;
+}
+
+.contacts__subtitle {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+  margin-bottom: 36px;
+}
+
+.contacts__address {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.contacts__item {
+  color: #000000;
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.contacts__map {
+  width: 960px;
+  height: 620px;
+  position: relative;
+  bottom: 13px;
+}
