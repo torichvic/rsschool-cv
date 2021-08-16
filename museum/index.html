@@ -41,7 +41,7 @@
     </header>
 
     <main class="main">
-        <section class="welcome dark-section">
+        <section class="welcome dark-section" id="welcome">
             <div class="container">
                 <h1 class="welcome__title section__title-light">
                     Welcome <br> to the Louvre
@@ -53,7 +53,7 @@
         </section>
 
         <section class="container section">
-            <div class="visiting">
+            <div class="visiting" id="visiting">
                 <h2 class="section__title-gold underline__title">Virtual tour</h2>
             </div>
             <div class="container__virtual-cards">
@@ -126,7 +126,7 @@
             </div>
         </section>
 
-        <section class="dark-section section">
+        <section class="dark-section section" id="explore">
             <div class=" container ">
                 <div class="explore__container">
                     <div class="explore__text">
@@ -146,7 +146,7 @@
 
 <!-- VIDEO-SECTION START -->
 
-        <section class="video video-section">
+        <section class="video video-section" id="video">
             <div class="container">
                 <div class="video-player">
                     <button class="big-pause-button"><a href="#!"></a></button>
@@ -155,16 +155,16 @@
 
                 <div class="video-controller__container">
                     <div class="video-buttons">
-                        <button class="previous video-buttons"><img src="./assets/img/video/previous.svg" alt="">
+                        <button class="previous video-buttons video-hover"><img src="./assets/img/video/previous.svg" alt="">
                         </button>
-                        <button class="play-pause video-buttons"><img src="./assets/img/video/play-pause.svg" alt=""></button>
-                        <button class="next video-buttons"><img src="./assets/img/video/next.svg" alt=""></button>
+                        <button class="play-pause video-buttons video-hover"><img src="./assets/img/video/play-pause.svg" alt=""></button>
+                        <button class="next video-buttons video-hover"><img src="./assets/img/video/next.svg" alt=""></button>
                         <input type="range" value="40" min="0" max="100" step="1" class="video-progress__style video-progress__size-m video-progress__btn">
-                        <button class="volume video-buttons"><img src="./assets/img/video/volume.svg" alt=""></button>
+                        <button class="volume video-buttons video-hover"><img src="./assets/img/video/volume.svg" alt=""></button>
                     </div>
                     <div class="volume-zoom">
                         <input type="range" value="40" min="0" max="100" step="1" class="video-progress__style video-progress__size-s video-progress__btn">
-                        <button class="zoom video-buttons"><img src="./assets/img/video/zoom.svg" alt=""></button>
+                        <button class="zoom video-buttons video-hover"><img src="./assets/img/video/zoom.svg" alt=""></button>
                     </div>
                 </div>
 
@@ -185,7 +185,7 @@
 
 <!-- TICKETS SECTION START -->
 
-        <section class="tickets dark-section section">
+        <section class="tickets dark-section section" id="tickets">
             <div class="container">
                 <h2 class="tickets__title section__title-light underline__title">Buy tickets</h2>
 
@@ -240,7 +240,7 @@
 
 <!-- ==== SECTION CONTACTS START ==== -->
 
-        <section class="contacts section">
+        <section class="contacts section" id="contacts">
             <div class="container">
                 <h2 class="tickets__title section__title-gold underline__title">Contacts</h2>
                 <div class="contacts-info__container">
@@ -270,9 +270,10 @@
 
 
 
-            <div class="footer__logo">Louvre</div>
+
 
             <nav class="footer__nav">
+                <div class="footer__logo">Louvre</div>
                     <ul class="footer__list1">
                             <li class="footer__item">
                                 <a href="#welcome" class="footer__link">Welcome</a>
@@ -297,9 +298,13 @@
 
                     </ul>
                 </nav>
-
-
-
+                <ul class="footer__icons">
+                    <li class="footer__icon-youtube"><a href="https://www.youtube.com/user/louvre" aria-label="youtube" target="_blank" class="footer__icon-link"></a></li>
+                    <li class="footer__icon-instagram"><a href="https://www.instagram.com/museelouvre/" aria-label="instagram" target="_blank" class="footer__icon-link"></a></li>
+                    <li class="footer__icon-facebook"><a href="https://www.facebook.com/museedulouvre" aria-label="facebook" target="_blank" class="footer__icon-link"></a></li>
+                    <li class="footer__icon-twitter"><a href="http://twitter.com/museelouvre" aria-label="twitter" target="_blank" class="footer__icon-link"></a></li>
+                    <li class="footer__icon-pinterest"><a href="https://www.pinterest.fr/museedulouvre/" aria-label="pinterest" target="_blank" class="footer__icon-link"></a></li>
+                </ul>
             </div>
         </div>
     </footer>
