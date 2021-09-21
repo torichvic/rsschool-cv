@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>Victoria Chen</title>
+    <link rel="stylesheet" href="css/reset.min.css.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__container">
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li><a href="#" class="header__link">About me</a></li>
+                <li><a href="#" class="header__link">Education</a></li>
+                <li><a href="#" class="header__link">Language</a></li>
+                <li><a href="#" class="header__link">Skills</a></li>
+                <li><a href="#" class="header__link">Contacts</a></li>
+              </ul>
+            </nav>
+        </div>
+      </header>
+
+      <div class="profile">
+        <img class="profile-photo" src="https://avatars.mds.yandex.net/get-yapic/39249/enc-cbd0127673b0d58eed8244ee45e0bbb0c995ae22351f6b3a5b4113619b8e5f8f/islands-300" alt="Photo">
+        <section class="about">
+          <h2 class="title-beige">About me</h2>
+          <p class="subtitle-text">I want to get necessary skills for work as frontend-developer. I like solving different problems. I master any information enough quickly. I believe that practice makes perfect </p>
+        </section>
+
+        <main class="education">
+          <h2 class="title-beige">Education</h2>
+          <p class="subtitle-text">I successfully graduated from <a href="https://int.rsue.ru/en/" class="global">University of Economics</a> in 2018 years. I have studied Trade Industry. I have participated in the conference 'Modern economic problems in Russia' and gave a presentation there. My article has published in <a href="https://search.rsl.ru/ru/record/01000735017" class="global">a book</a>.</p>
+        </main>
+
+        <section class="languages">
+          <h2 class="title-beige">Languages</h2>
+          <p class="subtitle-text">My english is B1</p>
+        </section>
+
+        <section class="skills"><h2 class="title-beige">Skills</h2></section>
+        <ul>
+          <li class="skill-name"><h3>HTML&CSS</h3></li>
+          <li class="skill-name"><h3>JavaScript</h3></li>
+          <li class="skill-name"><h3>Git</h3></li>
+        </ul>
+
+        <section class="contact">
+          <h2 class="title-beige">Contacts</h2>
+          <ul>
+            <li class="contact-name">Discord<a class="contact-list" href="discordto:quessy#0922"><br>quessy#0922</a></li>
+            <li class="contact-name">Skype<a class="contact-list" href="skypeto:quessy_5"><br>quessy_5</a></li>
+            <li class="contact-name">Email<a class="contact-list" href="mailto:torivhciv0@gmail.com"><br>torichvic0@gmail.com</a></li>
+          </ul>
+        </section>
+  </div>
+
+    <section class="resume">
+      <h1 class="name">Victoria Chen</h1>
+      <h2 class="position">Frontend-Developer</h2>
+      <div class="experience">
+        <h2 class="title-violet">Projects</h2>
+        <div class="projects">
+
+            <a href="https://codepen.io/torichvic/pen/YzVBqxG" target="_blank"><img src="./img/project1.svg" alt="Project №1" class="project-pic"></a>
+            <p class="project-text">This is my first project on CodePen. I studied flex-box technology and created 3 columns, I used HTML&CSS.</p>
+
+            <a href="https://github.com/torichvic/rsschool-cv/blob/main/cv.md" target="_blank"><img src="./img/project2.svg" alt="Project №2" class="project-pic"></a>
+          <span class="project-text">It is my resume. I studied markdown technology and improved text, I use HTML, Markdown</span>
+        </div>
+
+      <article class="example-of-code">
+        <h2 class="title-violet">Example of my code</h2>
+        <pre class="code-example"><code >
+          function getMiddle(s) {
+            if (s.length &lt;= 1) {
+              return s;
+            }
+
+            if (s.length % 2 === 0) {
+              let firstChar = s.length / 2 - 1;
+              let secondChar = s.length / 2;
+              return s[firstChar] + s[secondChar];
+            }
+
+            if (s.length % 2 === 1) {
+              let middleChar = Math.floor(s.length / 2);
+              return s[middleChar];
+            }
+          }
+        </code></pre>
+      </article>
+      </div>
+      <footer>
+        <a href="https://github.com/torichvic" target=_blank><img class="github" src="./img/github-hover.svg" alt="github"></a>
+        <span class="date">28.07.2021</span>
+        <a href="https://rs.school/js/" target=_blank><img class="rsschool" src="https://rs.school/images/rs_school_js.svg" alt="rs_school"></a>
+      </footer>
+    </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+  </html>
